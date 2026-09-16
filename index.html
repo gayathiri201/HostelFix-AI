@@ -1,29 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HostelFix-AI</title>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <h1>HostelFix-AI</h1>
+    <header>
+        <h1>HostelFix-AI</h1>
+        <p>AI-Based Hostel Complaint Prioritization System</p>
+    </header>
 
-    <h2>AI-Based Hostel Complaint Prioritization System</h2>
+    <main>
 
-    <form>
-        <label>Student Name:</label>
-        <input type="text" id="name">
+        <section class="complaint-card">
 
-        <br><br>
+            <h2>Submit a Complaint</h2>
+            <p class="description">
+                Report your hostel issue and let the system identify its priority.
+            </p>
 
-        <label>Complaint:</label>
-        <textarea id="complaint"></textarea>
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
 
-        <br><br>
+            <label for="room">Room Number</label>
+            <input type="text" id="room" placeholder="Enter your room number">
 
-        <button type="button">Submit Complaint</button>
-    </form>
-<script src="js/complaint.js"></script>
+            <label for="category">Complaint Category</label>
+            <select id="category">
+                <option value="">Select category</option>
+                <option value="Water">Water</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Food">Food</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Internet">Internet</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="complaint">Complaint</label>
+            <textarea id="complaint"
+                placeholder="Describe your hostel problem..."></textarea>
+
+            <button type="button">
+                Submit Complaint
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 HostelFix-AI | Smart Hostel Management</p>
+    </footer>
+
+    <script src="js/complaint.js"></script>
+
 </body>
+
 </html>
